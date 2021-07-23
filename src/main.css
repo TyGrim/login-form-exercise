@@ -23,16 +23,6 @@ fieldset {
   margin: 0 auto;
   cursor: pointer;
 }
-#submit {
-  padding: 15px;
-  color: white;
-  border-radius: 16px;
-  background-color: rgb(0, 140, 255);
-}
-input {
-  width: 150px;
-  padding: 6px;
-}
 
 label::before {
   content: '*';
@@ -40,14 +30,12 @@ label::before {
   color: rgb(247, 0, 0);
 }
 :required:hover {
-  background: rgba(255, 0, 0, 0.322);
+  background: rgba(112, 128, 144, 0.459);
 }
-#submit:hover {
-  background-color: greenyellow;
-  color: black;
-  cursor: crosshair;
+.tooltip {
+  color: purple;
 }
-.tooltip .tooltiptext {
+.tooltip-ty .tooltiptext {
   visibility: hidden;
   width: 100px;
   background-color: black;
@@ -59,6 +47,12 @@ label::before {
   z-index: 1;
 }
 
-.tooltip:hover .tooltiptext {
+.tooltip-ty:hover .tooltiptext {
   visibility: visible;
+}
+form + div {
+  border: 2px solid black;
+}
+.a {
+  border: 2px solid black;
 }
